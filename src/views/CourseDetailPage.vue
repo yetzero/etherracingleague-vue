@@ -2,14 +2,13 @@
   <div v-if="course">
     <section
       class="course-intro cc-sct cc-ovrl"
-      :style="{ '--background-image': `url(${getCourseImage(course.image)})` }"
+      :style="{ '--background-image': `url(${getCourseImage(course.backgroundImage)})` }"
     >
       <div class="cc-cntr">
         <div class="course-header">
           <h1 class="course__name">{{ course.name }}</h1>
           <div class="course__meta">
             <span class="course__planet">{{ course.planet }}</span>
-            <span class="course__difficulty" :class="difficultyClass">{{ course.difficulty }}</span>
           </div>
         </div>
       </div>
@@ -63,15 +62,18 @@ const course = computed(() => {
   return courseDetails[route.params.slug] || null
 })
 
-const difficultyClass = computed(() => {
-  if (!course.value) return ''
-  return `difficulty-${course.value.difficulty.toLowerCase()}`
-})
-
 const courseImages = import.meta.glob('@/assets/images/courses/*.webp', { eager: true })
+const mainImages = import.meta.glob('@/assets/images/*.webp', { eager: true })
 
 const getCourseImage = (filename) => {
-  const path = `/src/assets/images/courses/${filename}`
-  return courseImages[path]?.default || ''
+  // Check courses folder first
+  const coursePath = `/src/assets/images/courses/${filename}`
+  if (courseImages[coursePath]?.default) return courseImages[coursePath].default
+
+  // Then check main images folder
+  const mainPath = `/src/assets/images/${filename}`
+  if (mainImages[mainPath]?.default) return mainImages[mainPath].default
+
+  return ''
 }
 </script>

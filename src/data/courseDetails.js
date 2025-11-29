@@ -2,12 +2,10 @@ export const courseDetails = {
   'kaaru-desert': {
     name: 'Kaaru Desert',
     planet: 'Kaaru',
-    difficulty: 'Medium',
     image: 'kaaru-desert.webp',
     backgroundImage: 'kaaru-mining-facilities.webp',
     content: `
-      <p>The Kaaru Desert track winds through Blu Zaremi's home planet, featuring vast expanses of golden sand dunes, rocky outcroppings, and sudden sandstorms that can reduce visibility to near zero.</p>
-      <p>Racers must navigate treacherous terrain while avoiding the indigenous wildlife that roams the desert. The track is known for its long straightaways interrupted by sharp turns around ancient rock formations.</p>
+      <p>Located on Blu Zaremi's home planet of Kaaru, this course takes racers through the treacherous desert landscape, full of sand dunes, rocky outcroppings, and sudden sandstorms. Racers must navigate the ever-shifting sands and avoid the occasional native wildlife, such as the sand-skimming Drakar Beetle, ghastly Devourer and massive Earth Eater. The track also passes by small oases, offering brief respite from the harsh environment.</p>
     `,
     prevCourse: null,
     nextCourse: 'korravan-circuit'
@@ -15,12 +13,10 @@ export const courseDetails = {
   'korravan-circuit': {
     name: 'Korravan Circuit',
     planet: 'Korravan',
-    difficulty: 'Hard',
     image: 'korravan-circuit.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'korravan-concept-2.webp',
     content: `
-      <p>The war-torn world of Korravan provides a challenging circuit through bombed-out cities and military installations. The track weaves through crumbling infrastructure and active combat zones.</p>
-      <p>Debris and unpredictable hazards make this one of the most dangerous courses in the league. Only the bravest racers dare to compete here.</p>
+      <p>Located in the forest planet of Korravan. It starts with the high-speed loop through the Whispering Canopies, requiring racers to navigate through the natural tree-branch pathways. The race would then transition into more open track across the Lustrous Meadows, offering fewer obstacles but also less cover. Finally, racers would face a challenging course that runs along the Serpentine Rivers, featuring sudden drops and sharp turns.</p>
     `,
     prevCourse: 'kaaru-desert',
     nextCourse: 'solarae-ancient-temple'
@@ -28,12 +24,10 @@ export const courseDetails = {
   'solarae-ancient-temple': {
     name: 'Solarae Ancient Temple',
     planet: 'Solarae',
-    difficulty: 'Medium',
     image: 'solarae-ancient-temple.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'solarae-temple.webp',
     content: `
-      <p>This sacred course winds through the ancient temples of Solarae, where spiritual energy infuses every turn. The golden architecture creates a maze of corridors and open plazas.</p>
-      <p>Racers must respect the ancient grounds while pushing their bikes to the limit through narrow temple passages and across suspended bridges.</p>
+      <p>On the mysterious jungle-covered planet of Solarae, racers find themselves speeding through the ruins of an ancient temple. The track leads pilots through crumbling stone corridors adorned with intricate carvings and overgrown with vines, as well as open courtyards surrounded by towering statues. Racers must watch out for hidden traps and pitfalls, as well as the occasional native predator lurking in the shadows.</p>
     `,
     prevCourse: 'korravan-circuit',
     nextCourse: 'valendor-robot-factory'
@@ -41,12 +35,10 @@ export const courseDetails = {
   'valendor-robot-factory': {
     name: 'Valendor Robot Factory',
     planet: 'Valendor',
-    difficulty: 'Hard',
     image: 'valendor-robot-factory.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'valendor-factory.webp',
     content: `
-      <p>The highly automated factories of Valendor create a unique racing environment filled with moving platforms, robotic arms, and assembly line hazards.</p>
-      <p>Timing is everything on this track, as racers must synchronize their movements with the factory machinery to avoid collision.</p>
+      <p>Set on the technologically advanced planet of Valendor, this course takes racers through a sprawling, active robot factory. Pilots must dodge massive assembly lines, moving conveyor belts, and enormous robotic arms as they weave their way through the course. The track also features sections where racers must carefully navigate through narrow corridors filled with sparks and molten metal.</p>
     `,
     prevCourse: 'solarae-ancient-temple',
     nextCourse: 'xanara-waterways'
@@ -54,12 +46,10 @@ export const courseDetails = {
   'xanara-waterways': {
     name: 'Xanara Waterways',
     planet: 'Xanara',
-    difficulty: 'Medium',
     image: 'xanara-waterways.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'xanara-concept-2.webp',
     content: `
-      <p>The aquatic world of Xanara offers a spectacular course through underwater tunnels and floating platforms. Ether bikes are specially modified to handle the unique conditions.</p>
-      <p>The bioluminescent marine life creates a stunning visual backdrop as racers navigate through coral structures and tidal currents.</p>
+      <p>In the water planet of Xanara, racers plunge into a high-speed aquatic course that winds through the planet's labyrinthine waterways. Surrounded by vibrant coral reefs and teeming with alien marine life, pilots must navigate through tight tunnels and around massive underwater structures. Powerful underwater currents and schools of bioluminescent fish add an extra layer of challenge to the race.</p>
     `,
     prevCourse: 'valendor-robot-factory',
     nextCourse: 'mytheann-nebula'
@@ -67,12 +57,10 @@ export const courseDetails = {
   'mytheann-nebula': {
     name: 'Mytheann Nebula',
     planet: 'Mytheann',
-    difficulty: 'Expert',
     image: 'mytheann-nebula.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'mytheann-nebula.webp',
     content: `
-      <p>Racing through the cosmic clouds of the Mytheann Nebula is a mystical experience. The track follows energy pathways through colorful gas clouds and around celestial bodies.</p>
-      <p>The unpredictable nature of cosmic energies can affect bike systems, requiring racers to adapt on the fly to changing conditions.</p>
+      <p>Set in the vast expanse of space surrounding the hidden planet of Mytheann, this course takes racers through a breathtaking, multi-colored nebula. Pilots must weave their way through asteroid fields and pockets of cosmic gas, while contending with the gravitational anomalies that are unique to the region. The constantly shifting colors and patterns of the nebula make for a mesmerizing and challenging race.</p>
     `,
     prevCourse: 'xanara-waterways',
     nextCourse: 'oryxxon-skyway'
@@ -80,12 +68,10 @@ export const courseDetails = {
   'oryxxon-skyway': {
     name: 'Oryxxon Skyway',
     planet: 'Oryxxon',
-    difficulty: 'Hard',
     image: 'oryxxon-skyway.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'oryxxon-concept-5.webp',
     content: `
-      <p>The floating cities of Oryxxon provide an aerial racing experience like no other. The track connects multiple sky platforms through a series of jumps and elevated pathways.</p>
-      <p>Strong winds and the ever-present danger of falling make this course a true test of skill and nerve.</p>
+      <p>High above the cloud-covered planet of Oryxxon, racers take to the skies in this exhilarating aerial course. The track consists of a series of floating platforms, bridges, and archways that connect the planet's towering sky-islands. Pilots must navigate strong winds, sudden gusts, and lightning storms, all while taking care not to plummet from the sky.</p>
     `,
     prevCourse: 'mytheann-nebula',
     nextCourse: 'quinox-prime-battleground'
@@ -93,12 +79,10 @@ export const courseDetails = {
   'quinox-prime-battleground': {
     name: 'Quinox Prime Battleground',
     planet: 'Quinox Prime',
-    difficulty: 'Expert',
     image: 'quinox-prime-battleground.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'quinox-prime-battlefield.webp',
     content: `
-      <p>This military-grade course is set on the training grounds of Quinox Prime. The track features tactical obstacles, simulated combat zones, and precision-demanding sections.</p>
-      <p>Originally designed for military training, it has been adapted for racing but retains its challenging and unforgiving nature.</p>
+      <p>This course is set in the war-torn landscape of Quinox Prime, where remnants of past battles litter the track. Racers speed through abandoned military installations, dodge wreckage from fallen mecha, and navigate around enormous craters caused by orbital bombardments. The atmosphere is tense and thrilling, as racers must be alert for any hidden hazards or unexploded ordnance that could jeopardize their chances at victory.</p>
     `,
     prevCourse: 'oryxxon-skyway',
     nextCourse: 'ellyndor-gauntlet'
@@ -106,12 +90,10 @@ export const courseDetails = {
   'ellyndor-gauntlet': {
     name: 'Ellyndor Gauntlet',
     planet: 'Ellyndor',
-    difficulty: 'Medium',
     image: 'ellyndor-gauntlet.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'ellyndor-gauntlet.webp',
     content: `
-      <p>The ancient forests of Ellyndor create a natural gauntlet through towering trees and dense undergrowth. The track follows forest paths that twist and turn unpredictably.</p>
-      <p>Natural obstacles like fallen logs, low-hanging branches, and wildlife crossings keep racers on their toes throughout the course.</p>
+      <p>This course is a thrilling, high-speed race through Ellyndor's vast network of mining tunnels. Racers need to navigate through tight twists and turns, avoiding stalactites and stalagmites, while also dealing with the occasional subterranean creature. The course is lit by the natural glow of various precious gemstones embedded in the tunnel walls, creating a dazzling, sparkling spectacle. The final stretch of the race involves a daring dash up one of Ellyndor's towering cliffs, with the finish line located at the peak, offering a breathtaking view of the planet's rocky landscape.</p>
     `,
     prevCourse: 'quinox-prime-battleground',
     nextCourse: 'veltora-volcano'
@@ -119,12 +101,10 @@ export const courseDetails = {
   'veltora-volcano': {
     name: 'Veltora Volcano',
     planet: 'Veltora',
-    difficulty: 'Expert',
     image: 'veltora-volcano.webp',
-    backgroundImage: 'kaaru-mining-facilities.webp',
+    backgroundImage: 'veltora-volcano.webp',
     content: `
-      <p>The volcanic world of Veltora provides the most extreme racing conditions in the league. The track weaves around active lava flows, through ash clouds, and over unstable volcanic terrain.</p>
-      <p>Heat-resistant modifications are mandatory for bikes competing here, and racers must constantly monitor their thermal readings.</p>
+      <p>This perilous course on the volcanic planet of Veltora requires racers to navigate through a landscape dominated by lava flows, active geysers, and towering volcanic peaks. The intense heat and unpredictable eruptions test the limits of the vehicles's heat resistance, while pilots must avoid molten rocks and plumes of toxic gas as they race to the finish.</p>
     `,
     prevCourse: 'ellyndor-gauntlet',
     nextCourse: null

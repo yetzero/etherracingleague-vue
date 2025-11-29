@@ -28,9 +28,17 @@
 import { courses } from '@/data/courses.js'
 
 const courseImages = import.meta.glob('@/assets/images/courses/*.webp', { eager: true })
+const mainImages = import.meta.glob('@/assets/images/*.webp', { eager: true })
 
 const getCourseImage = (filename) => {
-  const path = `/src/assets/images/courses/${filename}`
-  return courseImages[path]?.default || ''
+  // Check main images folder first (original site uses these)
+  const mainPath = `/src/assets/images/${filename}`
+  if (mainImages[mainPath]?.default) return mainImages[mainPath].default
+
+  // Then check courses folder
+  const coursePath = `/src/assets/images/courses/${filename}`
+  if (courseImages[coursePath]?.default) return courseImages[coursePath].default
+
+  return ''
 }
 </script>
