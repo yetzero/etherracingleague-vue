@@ -913,6 +913,65 @@ h3 {
   }
 }
 
+/* Article image in grid */
+.image-c9b10ab {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.div-c8a040c:hover .image-c9b10ab {
+  transform: scale(1.05);
+}
+
+/* Pagination */
+#querypagination-c041e0c {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.querypaginationnumbers-c6bdec6 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: var(--cc-color-3);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-numbers:hover {
+  background-color: var(--cc-color-2);
+  color: white;
+  border-color: var(--cc-color-2);
+}
+
+.page-numbers.current {
+  background-color: var(--cc-color-2);
+  color: white;
+  border-color: var(--cc-color-2);
+  cursor: default;
+}
+
+/* Speedy class for animations */
+.speedy {
+  transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 576px) {
   .section-c21fbea {
     padding-top: 140px;
